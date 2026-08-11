@@ -15,6 +15,8 @@
 # TODO: Make this work with other databases of citations, 
 # TODO: Merge this with the existing TSV parsing solution
 
+# Also modified by YS
+
 
 from pybtex.database.input import bibtex
 import pybtex.database.input.bibtex 
@@ -29,7 +31,7 @@ publist = {
     "proceeding": {
         "file" : "proceedings.bib",
         "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
+        "venue-pretext": "the proceedings of ",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
         
@@ -65,6 +67,9 @@ for pubsource in publist:
         pub_month = "01"
         pub_day = "01"
         
+        # Add by YS:
+        abstract = ""
+        
         b = bibdata.entries[bib_id].fields
         
         try:
@@ -82,7 +87,8 @@ for pubsource in publist:
                     pub_month = str(b["month"])
             if "day" in b.keys(): 
                 pub_day = str(b["day"])
-
+            if "abstract" in b.keys():
+                abstract = str(b["abstract"])
                 
             pub_date = pub_year+"-"+pub_month+"-"+pub_day
             
@@ -94,6 +100,8 @@ for pubsource in publist:
 
             md_filename = (str(pub_date) + "-" + url_slug + ".md").replace("--","-")
             html_filename = (str(pub_date) + "-" + url_slug).replace("--","-")
+            # YS:
+            bib_filename = (str(pub_date) + "-" + url_slug + ".bib").replace("--","-")
 
             #Build Citation from text
             citation = ""
@@ -106,7 +114,12 @@ for pubsource in publist:
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
-            venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
+            if bibdata.entries[bib_id].type == "article":
+                venue = b["journal"].replace("{", "").replace("}","").replace("\\","")
+            elif bibdata.entries[bib_id].type == "inproceedings":
+                venue = "the proceedings of "+b["booktitle"].replace("{", "").replace("}","").replace("\\","")
+                
+            # venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
 
             citation = citation + " " + html_escape(venue)
             citation = citation + ", " + pub_year + "."
@@ -116,8 +129,14 @@ for pubsource in publist:
             md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
             
             md += """collection: """ +  publist[pubsource]["collection"]["name"]
-
+            
+            # Add by YS:
+            md += """\ncategory: articles"""
+            
             md += """\npermalink: """ + publist[pubsource]["collection"]["permalink"]  + html_filename
+            
+            # Add by YS:
+            md += """\nexcerpt: This paper is about TODO"""
             
             note = False
             if "note" in b.keys():
@@ -134,6 +153,8 @@ for pubsource in publist:
                 if len(str(b["url"])) > 5:
                     md += "\npaperurl: '" + b["url"] + "'"
                     url = True
+            
+            md += "\nbibtexurl: 'https://yann-situ.github.io/files/bibtex/" + bib_filename + "'"
 
             md += "\ncitation: '" + html_escape(citation) + "'"
 
@@ -143,17 +164,26 @@ for pubsource in publist:
             ## Markdown description for individual page
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
-
-            if url:
-                md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
-            else:
-                md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
+                
+            # Add by YS:
+            md += "\n" + abstract + "\n"
+            
+            # removed by YS:
+            # if url:
+            #     md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
+            # else:
+            #     md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
             md_filename = os.path.basename(md_filename)
-
             with open("../_publications/" + md_filename, 'w', encoding="utf-8") as f:
                 f.write(md)
+            
+            bib_filename = os.path.basename(bib_filename)
+            with open("../files/bibtex/" + bib_filename, 'w', encoding="utf-8") as f:
+                f.write(bibdata.entries[bib_id].to_string('bibtex'))
+                
             print(f'SUCCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
+            
         # field may not exist for a reference
         except KeyError as e:
             print(f'WARNING Missing Expected Field {e} from entry {bib_id}: \"', b["title"][:30],"..."*(len(b['title'])>30),"\"")

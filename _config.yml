@@ -8,15 +8,15 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yann-Situ Gazull"
+site_theme               : "situ" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Yann-Situ"
 title_separator          : "-"
-name                     : &name "Yann-Situ"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Yann-Situ Gazull"
+description              : &description "Personal website"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://yann-situ.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "yann-situ/yann-situ.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,9 +24,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Yann-Situ"
+  name             : "Yann-Situ Gazull"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : #"Short biography for the left-hand sidebar"
   location         : "Marseille, France"
   employer         : "Aix Marseille Université"
   uri              : # URL
@@ -35,16 +35,17 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0003-8539-9275"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
+  hal              : "https://hal.science/search/index/q/*/authIdHal_s/yann-situ"
 
 
   # Repositories and software development
@@ -84,6 +85,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
+  articles:
+    title: 'Published Papers'    
+  phdthesis:
+    title: 'PhD Thesis'    
+  preprints:
+    title: 'Preprints'    
   books:
     title: 'Books'
   manuscripts:
@@ -125,7 +132,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
