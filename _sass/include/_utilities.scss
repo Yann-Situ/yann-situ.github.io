@@ -172,6 +172,22 @@ body:hover .visually-hidden button {
   }
 }
 
+// added by YS
+.image-row {
+  display: flex;
+  // height: 200px;
+  gap: 10px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-row img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
 /*
    Icons
    ========================================================================== */

@@ -88,7 +88,7 @@ for pubsource in publist:
             if "day" in b.keys(): 
                 pub_day = str(b["day"])
             if "abstract" in b.keys():
-                abstract = str(b["abstract"])
+                abstract = "**Abstract**. "+str(b["abstract"])
                 
             pub_date = pub_year+"-"+pub_month+"-"+pub_day
             
@@ -105,10 +105,14 @@ for pubsource in publist:
 
             #Build Citation from text
             citation = ""
+            authors = ""
 
             #citation authors - todo - add highlighting for primary author?
             for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+                authors = authors+" "+author.first_names[0]+" "+author.last_names[0]+", "
+                
+            citation = citation + authors
+            authors = authors[:-2]
 
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
@@ -117,7 +121,7 @@ for pubsource in publist:
             if bibdata.entries[bib_id].type == "article":
                 venue = b["journal"].replace("{", "").replace("}","").replace("\\","")
             elif bibdata.entries[bib_id].type == "inproceedings":
-                venue = "the proceedings of "+b["booktitle"].replace("{", "").replace("}","").replace("\\","")
+                venue = "Proceedings of "+b["booktitle"].replace("{", "").replace("}","").replace("\\","")
                 
             # venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
 
@@ -155,6 +159,8 @@ for pubsource in publist:
                     url = True
             
             md += "\nbibtexurl: 'https://yann-situ.github.io/files/bibtex/" + bib_filename + "'"
+
+            md += "\nauthor: '" + html_escape(authors) + "'"
 
             md += "\ncitation: '" + html_escape(citation) + "'"
 
