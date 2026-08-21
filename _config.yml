@@ -93,10 +93,22 @@ publication_category:
     title: 'Preprints'    
   books:
     title: 'Books'
-  manuscripts:
+  journals:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+
+# Galler Category 
+gallery_category:
+  visual:
+    title: "Visual Art"
+  tradi:
+    title: 'Traditional'    
+  digital:
+    title: 'Digital Paintings'
+  maths:
+    title: 'Mathematic Illustrations'    
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -114,7 +126,7 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : "dark" # "light" (default), "dark"
+    colorscheme          : "light" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
@@ -145,7 +157,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -234,7 +246,10 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  # portfolio:
+  #   output: true
+  #   permalink: /:collection/:path/
+  gallery:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -244,17 +259,6 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -269,8 +273,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -278,23 +282,31 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
   # _talks
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+  # _gallery
+  - scope:
+      path: ""
+      type: gallery
+    values:
+      layout: single
       author_profile: true
       share: true
 
