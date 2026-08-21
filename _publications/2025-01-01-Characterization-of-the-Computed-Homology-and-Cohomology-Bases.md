@@ -1,7 +1,7 @@
 ---
 title: "Characterization of the Computed Homology and Cohomology Bases"
 collection: publications
-category: articles
+category: conferences
 permalink: /publication/2025-01-01-Characterization-of-the-Computed-Homology-and-Cohomology-Bases
 excerpt: 'We provide a combinatorial characterization of the homology bases computed by standard computational homology methods (discrete Morse theory, standard persistent homology, modified Smith normal form, tri-partitions), using homological discrete vector fields.'
 excerptimg: '<img src="/images/figures/cub-cplx1-1.png" alt="perfect hdvf">

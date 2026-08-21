@@ -1,7 +1,7 @@
 ---
 title: "Computing Geometrical Measures of Topological Holes"
 collection: publications
-category: articles
+category: journals
 permalink: /publication/2023-01-01-Computing-Geometrical-Measures-of-Topological-Holes
 excerpt: 'We define and compute two specific balls for every hole of a geometric object. One ball corresponds to the <i>thickness</i> (~fragility, in red), whereas the other corresponds to the <i>breadth</i> (~size, in blue) of the hole.'
 excerptimg: '<img src="/images/figures/eight-m-01.png" alt="eight hole balls"> 

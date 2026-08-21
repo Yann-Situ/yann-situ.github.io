@@ -1,0 +1,82 @@
+---
+title: Old watercolor
+layout: splash-title
+collection: gallery
+category: visual
+permalink: /gallery/Old watercolor
+thumbnail: images/art/Old watercolor/thumbnail.jpg
+date: 2026-08-21 01:03:01
+columns: 2
+---
+
+<div class="gallery-post columns-{{ page.columns | default: 2 }}">
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/20221017_133149.jpg"
+    alt="20221017 133149"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/20221017_133335.jpg"
+    alt="20221017 133335"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/20221017_133351.jpg"
+    alt="20221017 133351"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/20221017_133427.jpg"
+    alt="20221017 133427"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/20221017_133717.jpg"
+    alt="20221017 133717"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/20221019_010800.jpg"
+    alt="20221019 010800"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/Burano.jpg"
+    alt="Burano"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/Chez Moi.jpg"
+    alt="Chez Moi"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/IMG_3765.jpg"
+    alt="IMG 3765"
+    loading="lazy">
+</figure>
+
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old watercolor/me venisa.jpg"
+    alt="me venisa"
+    loading="lazy">
+</figure>
+</div>

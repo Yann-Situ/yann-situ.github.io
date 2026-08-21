@@ -1,0 +1,136 @@
+.gallery-category {
+  margin-bottom: 4rem;
+}
+
+.gallery-category h2 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.gallery-grid {
+  width: 100%;
+  column-count: 3;
+  column-gap: 1.5rem;
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  break-inside: avoid;
+  text-decoration: none;
+}
+
+.gallery-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-hover-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 0.5rem 0.75rem;
+  color: white;
+  background: var(--global-link-color-visited);
+
+  font-size: 0.9rem;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.gallery-item:hover .gallery-hover-title,
+.gallery-item:focus .gallery-hover-title {
+  opacity: 0.80;
+  transform: translateY(0);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+// as no hoovering on phones, always show titles
+// @media (max-width: 768px) {
+//   .gallery-hover-title {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+////////////////////////////////////////////////////////////////////////////////
+
+.gallery-post {
+  width: 100%;
+  column-count: 2;
+  column-gap: 1.5rem;
+}
+
+.gallery-post.columns-1 {
+  column-count: 1;
+}
+
+.gallery-post.columns-2 {
+  column-count: 2;
+}
+
+.gallery-post.columns-3 {
+  column-count: 3;
+}
+
+.gallery-post .gallery-image {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  break-inside: avoid;
+}
+
+.gallery-post .gallery-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .gallery-post {
+    column-count: 1;
+  }
+
+  .gallery-post.columns-2,
+  .gallery-post.columns-3 {
+    column-count: 1;
+  }
+}
+

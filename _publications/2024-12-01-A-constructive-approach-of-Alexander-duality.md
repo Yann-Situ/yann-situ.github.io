@@ -1,7 +1,7 @@
 ---
 title: "A constructive approach of Alexander duality"
 collection: publications
-category: articles
+category: journals
 permalink: /publication/2024-12-01-A-constructive-approach-of-Alexander-duality
 excerpt: 'We prove a combinatorial and geometric version of Alexander duality with a constructive proof, based on HDVFs.
 This allow us to define four different representations of homological holes, named <i>homology quartets</i>.'
