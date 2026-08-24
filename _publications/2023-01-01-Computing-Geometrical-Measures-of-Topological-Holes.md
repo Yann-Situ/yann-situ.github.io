@@ -14,6 +14,7 @@ paperurl: 'https://doi.org/10.1016/j.cad.2023.103563'
 bibtexurl: 'https://yann-situ.github.io/files/bibtex/2023-01-01-Computing-Geometrical-Measures-of-Topological-Holes.bib'
 halurl: 'https://hal.science/hal-04322031v1'
 codeurl: 'https://github.com/Yann-Situ/Hole-Measures'
+award: second best paper award
 author: ' Yann-Situ Gazull,  Alexandra Bac,  Aldo Gonzalez-Lorenzo'
 citation: ' Yann-Situ Gazull,  Alexandra Bac,  Aldo Gonzalez-Lorenzo, &quot;Computing Geometrical Measures of Topological Holes.&quot; Computer-Aided Design, 2023.'
 ---

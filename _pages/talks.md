@@ -14,7 +14,7 @@ author_profile: true
  - _CGAL Days_. Sophia Antipolis. April 2025.\\
   Presentation: _Homological Discrete Vector Fields... 1 year later..._, presented with Alexandra Bac.
  - _GTMG 2025_. Poitiers. March 2025.\\
-  Presentation: _Ongoing Works about Homology Configurations_, best presentation prize.
+  Presentation: _Ongoing Works about Homology Configurations_, best presentation award.
  - _Geometry and Computing_. Marseille (CIRM). October 2024.\\
   Presentation: _A Versatile Tool for Computing and Understanding Homology_.
  - _R-GTMG_. Marseille (CIRM). March 2024.\\
@@ -22,7 +22,7 @@ author_profile: true
  - _SPM 2023_. Genova, Italia. July 2023.\\
   Presentation: _Computing Geometrical Measures of Topological Holes_, second best paper award.
  - _GTMG 2021_. Online. March 2021.\\
-   Presentation: _Measuring Holes of 3D Meshes_, best student presentation prize.
+   Presentation: _Measuring Holes of 3D Meshes_, best student presentation award.
     
 ## Seminars
 ---

@@ -1,15 +1,23 @@
 ---
 title: Bulding jumping
 layout: splash-title
-collection: gallery
 category: visual
+collection: gallery
+target_url: /gallery/Bulding jumping
 permalink: /gallery/Bulding jumping
 thumbnail: images/art/Bulding jumping/thumbnail.jpg
-date: 2026-08-21 01:18:15
-columns: 2
+date: 2026-08-22 12:27:04
+columns: 1
 ---
 
 <div class="gallery-post columns-{{ page.columns | default: 2 }}">
+<figure class="gallery-image">
+  <img
+    src="/images/art/Bulding jumping/0-20240720_172758.jpg"
+    alt="0 20240720 172758"
+    loading="lazy">
+</figure>
+
 <figure class="gallery-image">
   <img
     src="/images/art/Bulding jumping/20211130_203824.jpg"
@@ -33,27 +41,6 @@ columns: 2
 
 <figure class="gallery-image">
   <img
-    src="/images/art/Bulding jumping/20220423_125008.jpg"
-    alt="20220423 125008"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
-    src="/images/art/Bulding jumping/20231030_184511.jpg"
-    alt="20231030 184511"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
-    src="/images/art/Bulding jumping/20240720_171705.jpg"
-    alt="20240720 171705"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
     src="/images/art/Bulding jumping/20240720_171811.jpg"
     alt="20240720 171811"
     loading="lazy">
@@ -63,13 +50,6 @@ columns: 2
   <img
     src="/images/art/Bulding jumping/20240720_172710.jpg"
     alt="20240720 172710"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
-    src="/images/art/Bulding jumping/20240720_172758.jpg"
-    alt="20240720 172758"
     loading="lazy">
 </figure>
 </div>

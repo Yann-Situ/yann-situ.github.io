@@ -1,12 +1,13 @@
 ---
 title: Portache
 layout: splash-title
-collection: gallery
 category: visual
+collection: gallery
+target_url: /gallery/Portache
 permalink: /gallery/Portache
 thumbnail: images/art/Portache/thumbnail.jpg
 date: 2026-08-21 10:40:27
-columns: 3
+columns: 1
 ---
 
 <div class="gallery-post columns-{{ page.columns | default: 2 }}">

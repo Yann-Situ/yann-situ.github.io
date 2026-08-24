@@ -1,12 +1,13 @@
 ---
 title: Digital
 layout: splash-title
-collection: gallery
 category: visual
+collection: gallery
+target_url: /gallery/Digital
 permalink: /gallery/Digital
 thumbnail: images/art/Digital/thumbnail.jpg
 date: 2026-08-21 00:23:17
-columns: 2
+columns: 1
 ---
 
 <div class="gallery-post columns-{{ page.columns | default: 2 }}">

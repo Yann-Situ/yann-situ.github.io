@@ -105,12 +105,13 @@ def generate_post(directory: Path, images: list[Path]) -> str:
     return f"""---
 title: {dir_name}
 layout: splash-title
-collection: gallery
 category: {CATEGORY}
+collection: gallery
+target_url: /gallery/{dir_name}
 permalink: /gallery/{dir_name}
 thumbnail: {thumbnail_path}
 date: {date}
-columns: 2
+columns: 1
 ---
 
 <div class="gallery-post columns-{{{{ page.columns | default: 2 }}}}">
@@ -152,7 +153,11 @@ def main():
             continue
 
         output_file = GALLERY_DIR / f"{directory.name}.md"
-
+        
+        if output_file.exists():
+            print(f"Skipping {directory}: .md file already exists")
+            continue
+            
         content = generate_post(directory, images)
 
         output_file.write_text(

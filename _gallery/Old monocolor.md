@@ -1,15 +1,23 @@
 ---
 title: Old monocolor
 layout: splash-title
-collection: gallery
 category: visual
+collection: gallery
+target_url: /gallery/Old monocolor
 permalink: /gallery/Old monocolor
 thumbnail: images/art/Old monocolor/thumbnail.jpg
-date: 2026-08-21 01:03:35
-columns: 2
+date: 2026-08-22 12:43:08
+columns: 1
 ---
 
 <div class="gallery-post columns-{{ page.columns | default: 2 }}">
+<figure class="gallery-image">
+  <img
+    src="/images/art/Old monocolor/0-atelier-dessin-2018-2019-1216.jpg"
+    alt="0 atelier dessin 2018 2019 1216"
+    loading="lazy">
+</figure>
+
 <figure class="gallery-image">
   <img
     src="/images/art/Old monocolor/20221017_133710.jpg"
@@ -63,13 +71,6 @@ columns: 2
   <img
     src="/images/art/Old monocolor/Park de Guell+ Moi.jpg"
     alt="Park de Guell+ Moi"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
-    src="/images/art/Old monocolor/atelier-dessin-2018-2019-1216.jpg"
-    alt="atelier dessin 2018 2019 1216"
     loading="lazy">
 </figure>
 

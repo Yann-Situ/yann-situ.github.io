@@ -1,26 +1,20 @@
 ---
 title: Adelphes
 layout: splash-title
-collection: gallery
 category: visual
+collection: gallery
+target_url: /gallery/Adelphes
 permalink: /gallery/Adelphes
 thumbnail: images/art/Adelphes/thumbnail.jpg
-date: 2026-08-21 01:26:20
-columns: 2
+date: 2026-08-22 12:22:21
+columns: 1
 ---
 
 <div class="gallery-post columns-{{ page.columns | default: 2 }}">
 <figure class="gallery-image">
   <img
-    src="/images/art/Adelphes/20210921_163259.jpg"
-    alt="20210921 163259"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
-    src="/images/art/Adelphes/20210921_163347.jpg"
-    alt="20210921 163347"
+    src="/images/art/Adelphes/0-adelphes.jpg"
+    alt="0 adelphes"
     loading="lazy">
 </figure>
 
@@ -49,13 +43,6 @@ columns: 2
   <img
     src="/images/art/Adelphes/IMG_20210618_012232.jpg"
     alt="IMG 20210618 012232"
-    loading="lazy">
-</figure>
-
-<figure class="gallery-image">
-  <img
-    src="/images/art/Adelphes/IMG_20210618_134202.jpg"
-    alt="IMG 20210618 134202"
     loading="lazy">
 </figure>
 

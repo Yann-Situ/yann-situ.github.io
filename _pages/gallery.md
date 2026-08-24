@@ -19,7 +19,7 @@ class: wide
           {% continue %}
         {% endif %}
 
-        <a href="{{ post.url | relative_url }}" class="gallery-item">
+        <a href="{{ post.target_url | relative_url }}" class="gallery-item">
           <div class="gallery-image">
             <img
               src="{{ post.thumbnail | relative_url }}"

@@ -43,6 +43,9 @@
       {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
     {% elsif post.collection == 'publications' and post.author %}
       {{ post.author }}<br /><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      {% if post.award %}
+        <i>({{post.award}})</i>
+      {% endif %}
     {% elsif post.collection == 'publications' %}
       Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
     {% elsif post.date %}
