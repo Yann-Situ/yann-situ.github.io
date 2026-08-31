@@ -3,14 +3,18 @@ title: Multi scale
 layout: splash-title
 category: visual
 collection: gallery
+tags:
+  - painting
+  - portrait
+  - graff
 target_url: /gallery/Multi scale
 permalink: /gallery/Multi scale
 thumbnail: images/art/Multi scale/thumbnail.jpg
-date: 2026-08-22 12:34:47
+date: 2020-11-01 21:22:00
 columns: 1
 ---
-
-<div class="gallery-post columns-{{ page.columns | default: 2 }}">
+A canvas painted with three stencils, and additional techniques (watercolor, markers, ...).
+<div class="gallery-post columns-{{ page.columns | default: 1 }}">
 <figure class="gallery-image">
   <img
     src="/images/art/Multi scale/0-Multi-Scale.jpg"

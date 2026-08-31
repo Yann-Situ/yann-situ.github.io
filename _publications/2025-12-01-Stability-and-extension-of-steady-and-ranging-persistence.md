@@ -3,7 +3,7 @@ title: "Stability and extension of steady and ranging persistence"
 collection: publications
 category: journals
 permalink: /publication/2025-12-01-Stability-and-extension-of-steady-and-ranging-persistence
-excerpt: 'We extend <i>steady</i> and <i>ranging</i> persistence from graphs to other categories, and provide a characterization of the features the give rise to stable <i>steady</i> and <i>ranging</i> persistent diagrams. We show examples for the category of hypergraphs.'
+excerpt: 'We extend <i>steady</i> and <i>ranging</i> persistence from graphs to other categories, and provide a characterization of the features that give rise to stable <i>steady</i> and <i>ranging</i> persistent diagrams. We show examples for hypergraphs.'
 excerptimg: '<img src="/images/figures/filtration-2.png" alt="hypergraph filtration">'
 date: 2025-12-01
 venue: 'Journal of Applied and Computational Topology'

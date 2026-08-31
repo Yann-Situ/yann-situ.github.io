@@ -85,12 +85,11 @@ def generate_post(directory: Path, images: list[Path]) -> str:
 
     # Gallery HTML
     image_html = []
-
     for image in images:
         if image != thumbnail_path:
             image_url = jekyll_path(image)
             alt = html.escape(image.stem.replace("-", " ").replace("_", " "))
-
+            
             image_html.append(
             f'''<figure class="gallery-image">
   <img
@@ -99,10 +98,10 @@ def generate_post(directory: Path, images: list[Path]) -> str:
     loading="lazy">
 </figure>'''
             )
+    image_html_first = image_html[0]
+    images_html_next = "\n\n".join(image_html[1:])
 
-    images_html = "\n\n".join(image_html)
-
-    return f"""---
+    s = f"""---
 title: {dir_name}
 layout: splash-title
 category: {CATEGORY}
@@ -111,13 +110,20 @@ target_url: /gallery/{dir_name}
 permalink: /gallery/{dir_name}
 thumbnail: {thumbnail_path}
 date: {date}
-columns: 1
+columns: 3
 ---
-
-<div class="gallery-post columns-{{{{ page.columns | default: 2 }}}}">
-{images_html}
+<div class="gallery-post columns-1">
+{image_html_first}
 </div>
 """
+    if images_html_next:
+        s += f"""
+<div class="gallery-post columns-{{{{ page.columns | default: 2 }}}}">
+{images_html_next}
+</div>
+"""
+
+    return s
 
 
 # ------------------------------------------------------------
@@ -173,3 +179,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# for randomize order, change  {% for post in site.gallery reversed %} in gallery.md by the following:
+# {% assign shuffled_gallery = site.gallery | sort: "gallery_order" %}
+# {% for post in shuffled_gallery %}
+

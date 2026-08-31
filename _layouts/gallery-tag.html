@@ -1,0 +1,51 @@
+---
+layout: splash
+author_profile: false
+class: wide
+---
+
+{% include base_path %}
+
+<div class="gallery-tags">
+  <a href="{{ '/gallery/' | relative_url }}" class="gallery-tag-all">All</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  {% for other_tag in site.gallery_tags %}
+    {% if page.tag == other_tag.tag %}
+      <a href="{{ other_tag.url | relative_url }}" class="gallery-tag active">{{ other_tag.title }}</a>
+    {% else %}
+      <a href="{{ other_tag.url | relative_url }}" class="gallery-tag">{{ other_tag.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>{{ page.title }}</h1>
+
+<div class="gallery-grid">
+
+  {% for post in site.gallery reversed %}
+
+    {% if post.tags contains page.tag %}
+
+      <a href="{{ post.target_url | relative_url }}"
+         class="gallery-item {{ post.wide }}">
+
+        <div class="gallery-image">
+
+          <img
+            src="{{ post.thumbnail | relative_url }}"
+            alt="{{ post.title }}"
+            loading="lazy">
+
+          <div class="gallery-hover-title">
+            {{ post.title }}
+          </div>
+
+        </div>
+
+      </a>
+
+    {% endif %}
+
+  {% endfor %}
+
+</div>

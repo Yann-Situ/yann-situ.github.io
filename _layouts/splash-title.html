@@ -9,6 +9,18 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
+  <div class="gallery-tags">
+    <a href="{{ '/gallery/' | relative_url }}" class="gallery-tag-all">All</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    {% for other_tag in site.gallery_tags %}
+      {% if page.tags contains other_tag.tag %}
+        <a href="{{ other_tag.url | relative_url }}" class="gallery-tag active-light">{{ other_tag.title }}</a>
+      {% else %}
+        <a href="{{ other_tag.url | relative_url }}" class="gallery-tag">{{ other_tag.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
   <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

@@ -85,30 +85,19 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  articles:
-    title: 'Published Papers'    
+  journals:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'   
   phdthesis:
     title: 'PhD Thesis'    
   preprints:
     title: 'Preprints'    
   books:
     title: 'Books'
-  journals:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
 
 # Galler Category 
-gallery_category:
-  visual:
-    title: "Visual Art"
-  tradi:
-    title: 'Traditional'    
-  digital:
-    title: 'Digital Paintings'
-  maths:
-    title: 'Mathematic Illustrations'    
-
+# gallery_tags: ['graff', 'painting', 'digital', 'maths', 'shader', 'landscape', 'portrait']
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -250,6 +239,9 @@ collections:
   #   output: true
   #   permalink: /:collection/:path/
   gallery:
+    output: true
+    permalink: /:collection/:path/
+  gallery_tags:
     output: true
     permalink: /:collection/:path/
   talks:

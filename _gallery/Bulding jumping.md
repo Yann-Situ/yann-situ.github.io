@@ -3,21 +3,24 @@ title: Bulding jumping
 layout: splash-title
 category: visual
 collection: gallery
+tags:
+  - painting
 target_url: /gallery/Bulding jumping
 permalink: /gallery/Bulding jumping
 thumbnail: images/art/Bulding jumping/thumbnail.jpg
-date: 2026-08-22 12:27:04
-columns: 1
+date: 2024-07-01
+columns: 3
 ---
-
-<div class="gallery-post columns-{{ page.columns | default: 2 }}">
+<div class="gallery-post columns-1">
 <figure class="gallery-image">
   <img
     src="/images/art/Bulding jumping/0-20240720_172758.jpg"
     alt="0 20240720 172758"
     loading="lazy">
 </figure>
+</div>
 
+<div class="gallery-post columns-{{ page.columns | default: 2 }}">
 <figure class="gallery-image">
   <img
     src="/images/art/Bulding jumping/20211130_203824.jpg"

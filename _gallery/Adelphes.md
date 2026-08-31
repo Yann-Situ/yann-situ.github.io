@@ -3,21 +3,25 @@ title: Adelphes
 layout: splash-title
 category: visual
 collection: gallery
+tags:
+  - painting
+  - portrait
 target_url: /gallery/Adelphes
 permalink: /gallery/Adelphes
 thumbnail: images/art/Adelphes/thumbnail.jpg
-date: 2026-08-22 12:22:21
-columns: 1
+date: 2021-06-20
+columns: 3
 ---
-
-<div class="gallery-post columns-{{ page.columns | default: 2 }}">
+<div class="gallery-post columns-1">
 <figure class="gallery-image">
   <img
     src="/images/art/Adelphes/0-adelphes.jpg"
     alt="0 adelphes"
     loading="lazy">
 </figure>
+</div>
 
+<div class="gallery-post columns-{{ page.columns | default: 2 }}">
 <figure class="gallery-image">
   <img
     src="/images/art/Adelphes/IMG_20210616_132442.jpg"

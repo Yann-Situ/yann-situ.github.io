@@ -4,7 +4,7 @@ collection: publications
 category: journals
 permalink: /publication/2024-12-01-A-constructive-approach-of-Alexander-duality
 excerpt: 'We prove a combinatorial and geometric version of Alexander duality with a constructive proof, based on HDVFs.
-This allow us to define four different representations of homological holes, named <i>homology quartets</i>.'
+This allows us to define four different representations of homological holes, named <i>homology quartets</i>.'
 excerptimg: '<img src="/images/figures/2D-T-K-HC.png" alt="HDVF on a complex K"> 
   <img src="/images/figures/2D-T-Kc-HC.png" alt="HDVF on its complementary complex Kc"> 
   <img src="/images/figures/2D-T-sphere-HC-KcupKc.png" alt="HDVF on S2"> 

@@ -3,21 +3,25 @@ title: Stencil of an unknown
 layout: splash-title
 category: visual
 collection: gallery
+tags:
+  - portrait
+  - graff
 target_url: /gallery/Stencil of an unknown
 permalink: /gallery/Stencil of an unknown
 thumbnail: images/art/Stencil of an unknown/thumbnail.jpg
-date: 2026-08-22 12:47:54
-columns: 1
+date: 2019-03-01 12:47:54
+columns: 3
 ---
-
-<div class="gallery-post columns-{{ page.columns | default: 2 }}">
+<div class="gallery-post columns-1">
 <figure class="gallery-image">
   <img
     src="/images/art/Stencil of an unknown/0-Unknown-Stencil.jpg"
     alt="0 Unknown Stencil"
     loading="lazy">
 </figure>
+</div>
 
+<div class="gallery-post columns-{{ page.columns | default: 2 }}">
 <figure class="gallery-image">
   <img
     src="/images/art/Stencil of an unknown/1-20221017_135139.jpg"
