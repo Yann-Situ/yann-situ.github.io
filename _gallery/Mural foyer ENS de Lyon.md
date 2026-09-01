@@ -9,8 +9,10 @@ target_url: /gallery/Mural foyer ENS de Lyon
 permalink: /gallery/Mural foyer ENS de Lyon
 thumbnail: images/art/Mural foyer ENS de Lyon/thumbnail.jpg
 date: 2019-04-04 12:38:17
-columns: 3
+columns: 2
 ---
+A participative mural I co-organized for _Art Total_ student festival at _ENS de Lyon_, through the art association _Enplastik_.
+
 <div class="gallery-post columns-1">
 <figure class="gallery-image">
   <img
