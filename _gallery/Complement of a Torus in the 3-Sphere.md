@@ -66,16 +66,6 @@ Here is a torus in a 3-sphere (left), its complement (middle) and a cut-view of 
     alt="3D Kc 0"
     loading="lazy">
 </figure>
-
-</div>
-
-<div class="gallery-post columns-1">
-<figure class="gallery-image">
-  <img
-    src="/images/art/Complement of a Torus in the 3-Sphere/0-3D-Kc-1-alter (copie).png"
-    alt="0 3D Kc 1 alter (copie)"
-    loading="lazy">
-</figure>
 </div>
 
 Here are some intermediate steps to transform the complement into two annulus. The idea is to make room for the inside annulus, in the right hemisphere, and then push the room walls outside the right hemisphere (so into the left one).
