@@ -11,7 +11,7 @@ In particular, I have worked a lot on _computational homology_, and around the n
 
 I have also worked on research topics related to _geometry processing_, _computer graphics_, _(hyper)graph theory_, _category theory_, _digital geometry_.
 
-My PhD can be found here: [_On the Computations of Homological Holes: where topology, geometry and combinatorics meet_](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf).
+My PhD thesis manuscript can be found here: [_On the Computations of Homological Holes: where topology, geometry and combinatorics meet_](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf).
 
 <br>
 

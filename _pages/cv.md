@@ -16,7 +16,7 @@ redirect_from:
 * **2023-2026**. Ph.D in Theoretical Computer Science, LIS, Aix-Marseille Université\\
   - Title:  [_On the Computations of Homological Holes: where topology, geometry and combinatorics meet_](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf).
   - under the supervision of Alexandra BAC and Aldo GONZALEZ-LORENZO
-  - defense on October 7th 2026
+  - defended on October 7th 2026
 * **2019-2021**. Master degree in Theoretical Computer Science, ENS de Lyon\\
   co-accredited with _ID3D_ (computer graphics master degree), UCBL1, Lyon
 * **2018-2019**. Bachelor degree in Theoretical Computer Science, ENS de Lyon
@@ -36,7 +36,7 @@ redirect_from:
 * **Spring 2020** (3 months). Constraint Automatic Instantiation for Color Palettes
   * with Nicolas MELLADO and David VANDERHAEGHE, IRIT, Toulouse (France)
 
-* **Fall 2019** (4 months in partial time). Reconstruction Géométrique Interactive dans l’Espace Digita
+* **Fall 2019** (4 months in partial time). Reconstruction Géométrique Interactive dans l’Espace Digital
   * with Srečko BRLEK, LACIM, Montreal (Canada)
   
 * **Spring 2019** (6 weeks). Echantillonnage Rapide de Surfaces 3D in the Wild
