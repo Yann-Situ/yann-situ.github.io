@@ -12,6 +12,7 @@ thumbnail: images/art/Cul du cube/thumbnail.jpg
 date: 2020-04-01 21:25:31
 columns: 3
 ---
+Made after a weird dream.
 <div class="gallery-post columns-1">
 <figure class="gallery-image">
   <img
