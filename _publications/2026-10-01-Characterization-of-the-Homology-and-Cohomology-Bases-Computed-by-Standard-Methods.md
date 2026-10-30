@@ -1,5 +1,5 @@
 ---
-title: "Characterization of the Homology and Cohomology Bases Computed by Standard Methods (To be published)"
+title: "Characterization of the Homology and Cohomology Bases Computed by Standard Methods"
 collection: publications
 category: journals
 permalink: /publication/2026-10-01-Characterization-of-the-Homology-and-Cohomology-Bases-Computed-by-Standard-Methods
@@ -7,8 +7,10 @@ excerpt: 'This paper is an extension of the paper [Characterization of the Compu
 We characterize the homology and cohomology bases computed by standard computational homology methods. We also characterize the pair of homology and cohomology bases that can be computed simultaneously.'
 excerptimg: '<img src="/images/figures/cub-cplx1-basis-fi.png" alt="explicit cohomology">
 <img src="/images/figures/non-combinable-bases-2.png" alt="non compatible explicit basis">'
-date: 2026-10-01
+date: 2026-10-22
 venue: 'Journal of Mathematical Imaging and Vision'
+paperurl: 'https://doi.org/10.1007/s10851-026-01356-z'
+bibtexurl: 'https://yann-situ.github.io/files/bibtex/2026-10-01-Characterization-of-the-Homology-and-Cohomology-Bases-Computed-by-Standard-Methods.bib'
 author: ' Yann-Situ Gazull,  Aldo Gonzalez-Lorenzo,  Alexandra Bac'
 citation: ' Yann-Situ Gazull,  Aldo Gonzalez-Lorenzo,  Alexandra Bac, &quot;Characterization of the Homology and Cohomology Bases Computed by Standard Methods.&quot; Journal of Mathematical Imaging and Vision, 2026.'
 ---

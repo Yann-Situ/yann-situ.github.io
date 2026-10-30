@@ -14,7 +14,8 @@ redirect_from:
 ---
 ## Background
 * **2023-2026**. Ph.D in Theoretical Computer Science, LIS, Aix-Marseille Université\\
-  - Title:  [_On the Computations of Homological Holes: where topology, geometry and combinatorics meet_](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf).
+  - Title: _On the Computations of Homological Holes: where topology, geometry and combinatorics meet_. [Manuscript](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf) and [slides](../files/slides/thesis-defense-reduced.pdf).
+
   - under the supervision of Alexandra BAC and Aldo GONZALEZ-LORENZO
   - defended on October 7th 2026
 * **2019-2021**. Master degree in Theoretical Computer Science, ENS de Lyon\\

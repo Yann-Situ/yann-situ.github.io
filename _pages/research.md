@@ -5,13 +5,12 @@ permalink: /research/
 author_profile: true
 ---
 
-I mostly like to practice mathematics that have a strong visual aspect.
 My research interests are mainly related to topology and geometry, from discrete and combinatorial points of view.
 In particular, I have worked a lot on _computational homology_, and around the notion of _hole_.
 
 I have also worked on research topics related to _geometry processing_, _computer graphics_, _(hyper)graph theory_, _category theory_, _digital geometry_.
 
-My PhD thesis manuscript can be found here: [_On the Computations of Homological Holes: where topology, geometry and combinatorics meet_](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf).
+My PhD thesis is entitled _On the Computations of Homological Holes: where topology, geometry and combinatorics meet_, here are the [manuscript](../files/Thesis-Yann-Situ-GAZULL-manuscript.pdf) and [slides](../files/slides/thesis-defense-reduced.pdf).
 
 <br>
 
